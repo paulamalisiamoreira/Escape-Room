@@ -11,6 +11,7 @@ INSERT INTO genero (nome_genero, descricao_genero) VALUES ('Ação', 'Filmes com
 INSERT INTO genero (nome_genero, descricao_genero) VALUES ('RPG', 'Jogos de interpretação de papéis');
 INSERT INTO genero (nome_genero, descricao_genero) VALUES ('Fantasia', 'Livros com elementos mágicos');
 INSERT INTO genero (nome_genero, descricao_genero) VALUES ('Romance', 'Livros de amor');
+INSERT INTO genero (nome_genero, descricao_genero) VALUES ('Suspense', 'Livros de trama e suspense');
 
 INSERT INTO partida (time_visitante, time_mandante, FK_genero) VALUES ('Corinthians', 'Flamengo', 1); 
 INSERT INTO partida (time_visitante, time_mandante, FK_genero) VALUES ('Fluminense', 'Vasco', 2); 
@@ -34,8 +35,8 @@ INSERT INTO filmes_assistidos (FK_pessoa, FK_filme, hora_assistida) VALUES (2, 2
 INSERT INTO filmes_assistidos (FK_pessoa, FK_filme, hora_assistida) VALUES (3, 1, '2023-06-05 22:00:00'); -- Maria  assistiu Filme de Ação
 
 
-INSERT INTO jogos_online (nome_jogo, FK_genero) VALUES ('Jogo de RPG', 6);
-INSERT INTO jogos_online (nome_jogo, FK_genero) VALUES ('Outro Jogo de RPG', 6);
+INSERT INTO jogos_online (nome_jogo, FK_genero) VALUES ('MINECRAFT', 6);
+INSERT INTO jogos_online (nome_jogo, FK_genero) VALUES ('CSGO', 6);
 
 
 INSERT INTO jogos_online_jogados (FK_pessoa, FK_jogos, hora_assistida) VALUES (1, 1, '2023-06-05 22:00:00'); 
@@ -46,6 +47,9 @@ INSERT INTO jogos_online_jogados (FK_pessoa, FK_jogos, hora_assistida) VALUES (2
 INSERT INTO livros (nome_livro, FK_genero) VALUES ('Livro de Fantasia', 7);
 INSERT INTO livros (nome_livro, FK_genero) VALUES ('Outro Livro de Fantasia', 7);
 INSERT INTO livros (nome_livro, FK_genero) VALUES ('Fly', 8);
+INSERT INTO livros (nome_livro, FK_genero) VALUES ('Here', 9);
+INSERT INTO livros (nome_livro, FK_genero) VALUES ('Now', 9);
+INSERT INTO livros (nome_livro, FK_genero) VALUES ('Never', 9);
 
 
 INSERT INTO livros_lidos (FK_pessoa, FK_livro, hora_assistida) VALUES (2, 1, '2023-06-07 18:00:00'); 
